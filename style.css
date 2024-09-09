@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden; /* Ensures that the body fits the entire viewport */
+}
+
+.container {
+    background: #FFF;
+    padding: 2rem;
+    width: 100%;
+    max-width: 25rem; /* Limits the width for smaller screens */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Remove fixed min-height */
+    /* Let content define the height */
+}
+
+.inner {
+    height: 20rem; /* Set a specific height for the inner container */
+    overflow: auto; /* Allows scrolling if content exceeds the height */
+    display: none;
+}
+#instructions {
+    height: 20rem;  
+    overflow: auto; 
+    display: none;
+}
+
+.container .search-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container .search-box input {
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.container .search-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(223, 223, 10);
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.container .search-box button:hover {
+    background-color: rgb(235, 235, 10);
+}
+
+.container img {
+    width: 10rem;
+    height: 8rem;
+    display: block; /* Ensures proper centering */
+    margin: 1rem auto;
+}
+
+.container .recipe {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 223, 10);
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.container .recipe h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
+    border-bottom: 1px solid black;
+}
+
+.container .recipe p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.container .container2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+.container .container2 .box1, .container .container2 .box2 {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .instructions {
+    width: 9rem;
+    padding: 0.5rem;
+    display: block;
+    background-color: rgb(235, 235, 10);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 1rem auto; /* Center the button */
+    cursor: pointer;
+}
+
+.container .error {
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container #instructions {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back-btn {
+    background-color: rgb(218, 218, 10);
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: cursive;
+    transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: rgb(247, 247, 2);
+}
